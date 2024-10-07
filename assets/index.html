@@ -266,7 +266,7 @@
               Book A Meeting With Our Team!
             </button>
              <div class="d-flex align-items-center max-lg:hidden ">
-               <button class="circle-1 rounded-full absolute -left-[4%] z-20 top-[30%] transition-all duration-400 circle-4 next border-2 border-black hover:bg-white hover:border-2 z-10">
+               <button id="next" class="circle-1 rounded-full absolute -left-[4%] z-20 top-[30%] transition-all duration-400 circle-4 border-2 border-black hover:bg-white hover:border-2 z-10">
            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path class="change-svg" d="M13.5352 15.0001L19.7227 21.1876L17.9552 22.9551L10.0002 15.0001L17.9552 7.04508L19.7227 8.81258L13.5352 15.0001Z" fill="white"/>
 </svg>
@@ -283,7 +283,7 @@
 
 </style>
 </button>
-          <button class="circle-1 rounded-full absolute -right-[4%] z-20 top-[30%] transition-all duration-400 me-3 circle-3 prev border-2 border-black hover:bg-white hover:border-2 ">
+          <button id="prev" class="circle-1 rounded-full absolute -right-[4%] z-20 top-[30%] transition-all duration-400 me-3 circle-3 border-2 border-black hover:bg-white hover:border-2 ">
            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_6231_4202)">
 <path class="change-svg" d="M16.4648 14.9999L10.2773 8.81242L12.0448 7.04492L19.9998 14.9999L12.0448 22.9549L10.2773 21.1874L16.4648 14.9999Z" fill="white"/>
@@ -481,8 +481,8 @@
             slidesToScroll: 1,
             autoplay:true,
             autoplaySpeed: 3000,
-            prevArrow: $('.prev'),
-            nextArrow: $('.next'),
+            prevArrow: $('#prev'),
+            nextArrow: $('#next'),
 
             responsive: [
                 {
